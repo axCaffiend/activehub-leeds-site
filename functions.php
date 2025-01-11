@@ -138,10 +138,40 @@ add_action( 'widgets_init', 'activehub_leeds_widgets_init' );
  * Enqueue scripts and styles.
  */
 function activehub_leeds_scripts() {
+
+	// === Stylesheets ===
+
+	// Base Underscores stylesheet
 	wp_enqueue_style( 'activehub-leeds-style', get_stylesheet_uri(), array(), _S_VERSION );
+	
+	// Google Fonts
+	wp_enqueue_style('activehub-leeds-google-fonts', 'https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rowdies:wght@300;400;700&display=swap');
+	
+	// Google Material Symbols
+	wp_enqueue_style('activehub-leeds-google-material-symbols-rounded', 'https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+
+	// Iconoir symbols
+	wp_enqueue_style('activehub-leeds-iconoir', 'https://cdn.jsdelivr.net/gh/iconoir-icons/iconoir@main/css/iconoir.css');
+	
+	// Bootstrap V5.3.3
+	wp_enqueue_style('activehub-leeds-bootstrap-5-css', 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css');
+
+	// Main stylesheet (from static site)
+	wp_enqueue_style('activehub-leeds-main-style', get_stylesheet_directory_uri() . '/stylesheets/main-style.css');
 	wp_style_add_data( 'activehub-leeds-style', 'rtl', 'replace' );
 
+	// === Scripts ===
+
+	// Underscores navigation.js
 	wp_enqueue_script( 'activehub-leeds-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
+
+	// JQuery V3.7.1 
+	// For bootstrap-select js-plugin, may delete later if plugin not used.
+	wp_enqueue_script('activehub-leeds-jquery', 'https://code.jquery.com/jquery-3.7.1.min.js', array(), '3.7.1', true);
+
+	// Bootstrap V5.3.3
+	wp_enqueue_script('activehub-leeds-bootstrap5-js', 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js', array(), '5.3.3', true);
+
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );

@@ -17,37 +17,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
-	<!-- ----------- -->
-    <!-- STYLESHEETS -->
-    <!-- ----------- -->
-
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
-
-    <!-- Google Material Symbols -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
-
-    <!-- Iconoir -->
-    <link rel="stylesheet"
-    href="https://cdn.jsdelivr.net/gh/iconoir-icons/iconoir@main/css/iconoir.css">
-
-    <!-- Bootstrap V5.3.3  -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
-    <!-- Bootstrap-select plugin v1.14.0  -->
-     <!-- For multiselect picker dropdowns with bootstrap select inputs -->
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.14.0-beta3/dist/css/bootstrap-select.min.css">
-
-    <!-- Custom Stylesheet -->
-    <link rel="stylesheet" href="wp-content\themes\activehub-leeds\stylesheets\main-style.css">
-
-    <!-- JQuery -->
-     <!-- For bootstrap-select -->
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-
 	<?php wp_head(); ?>
 </head>
 
