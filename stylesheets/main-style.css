@@ -1,0 +1,591 @@
+
+/* ============== */
+/* ROOT VARIABLES */
+/* ============== */
+
+:root {
+
+/* ---------------- */
+/* Colours          */
+/* ---------------- */
+
+
+--primary-colour: rgb(80,165,177);
+--secondary-colour: rgb(241,96,13);
+--tertiary-colour: rgb(119, 38, 173);
+--disabled-control-colour: rgb(140, 140, 140);
+--surface-dark: rgb(26,38,90);
+--surface-light: rgb(254,246,237);
+
+/* Focus rings */
+--focus-ring-opacity: 0.25;
+--custom-focus-ring: rgb(80,165,177, var(--focus-ring-opacity));
+
+/* Box shadows */
+--2x-box-shadow: 0.15rem 0.15rem 0px 0px;
+--card-shadow: 0.2rem 0.2rem 0 0 var(--surface-dark);
+
+/* Borders */
+--form-control-border: solid 0.05rem var(--surface-dark);
+
+
+/* ---------------- */
+/* Font families    */
+/* ---------------- */
+
+--primary-font-family: "Rowdies", sans-serif;
+--secondary-font-family: "Open Sans", sans-serif;
+
+/* ---------------- */
+/* Text-size styles */
+/* ---------------- */
+
+/* base size: --mobile--p-text (16px) */
+
+
+/* ----- Mobile ----- */
+--notes--image-descriptions: 0.75rem;
+--mobile--h1: 3rem;
+--mobile--h2: 2.25rem;
+--mobile--h3: 1.75rem;
+--mobile--h4: 1.5rem;
+--mobile--card-title: 1.25rem;
+--mobile--card-key-info: 1rem;
+--mobile--lead-text: 1.25rem;
+--mobile--p-text: 1rem;
+--mobile--inline-links: 1rem;
+--mobile--fieldset-legend: 1.25rem;
+--mobile--field-label_upper: 1rem;
+--mobile--field-label_lower: 1rem;
+--mobile--input-placeholder-text-p: 1rem;
+--mobile--button-m: 1rem;
+
+/* ----- Desktop ----- */
+--desktop--h1: 5.38rem;
+--desktop--h2: 3.5rem;
+--desktop--h2-logo: 4rem;
+--desktop--h3: 2.5rem;
+
+/* CTAs */
+--desktop--button-m: 1.12rem;
+--desktop--lead-text: 2rem;
+--desktop--lead-text-em: 2rem;
+--desktop--p-text: 1.12rem;
+--desktop--lead-text-small: 1.38rem;
+--desktop--inline-links: 1.12rem;
+--desktop--input-placeholder-p-text: 1.12rem;
+
+/* Cards */
+--desktop--card-p-semibold: 1.25rem;
+--desktop--card-date-time: 1.25rem;
+
+}
+
+/* ============================= */
+/* PAGE LAYOUT                   */
+/* ============================= */
+
+.container-fluid {
+    /* border: solid 1px red; */
+    margin: 0 auto;
+    padding: 0;
+}
+
+
+/* top margin offsets from behind fixed header */
+main.container-fluid {
+    padding-top: 7rem;
+}
+
+
+/* ============================== */
+/* GOOGLE MATERIAL SYMBOLS STYLE  */
+/* ============================== */
+/* 
+    *** Default Settings ***
+    - No fill
+    - Weight: 400 (default)
+    - Grade: 0 (default)
+    - Size: 24px
+*/
+
+.material-symbols-rounded {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24;
+  vertical-align: middle;
+}
+
+/* Material symbols - inline */
+p>.material-symbols-rounded {
+    margin-right: 0.25rem;
+}
+
+/* ============== */
+/* ICONOIR ICONS  */
+/* ============== */
+/* Used for main-footer social media links */
+i[class^="iconoir-"] {
+    font-size: 3rem;
+}
+
+
+/* ============== */
+/* TEXT STYLING   */
+/* ============== */
+
+body {
+    font-family: var(--secondary-font-family);
+    color: var(--surface-dark);
+    background-color: var(--surface-light);
+}
+
+h1 {
+    font-family: var(--primary-font-family);
+    font-size: var(--mobile--h1);
+}
+
+h2 {
+    font-family: var(--primary-font-family);
+    font-size: var(--mobile--h2);
+    font-weight: 600;
+}
+
+h3 {
+    font-family: var(--primary-font-family);
+    font-size: var(--mobile--h3);
+    font-weight: 300;
+}
+
+h4 {
+    font-family: var(--secondary-font-family);
+    font-size: var(--mobile--h4);
+}
+
+.lead {
+    font-size: var(--mobile--lead-text);
+    font-family: var(--secondary-font-family);
+    font-weight: 400;
+}
+
+.lead>em {
+    font-size: var(--mobile--lead-text-em);
+    font-weight: 700;
+}
+
+p {
+    font-family: var(--secondary-font-family);
+    font-size: var(--mobile--p-text);
+    margin: 1rem;
+}
+
+a {
+    color: inherit;
+}
+
+.inline-link, .inline-link:active, .inline-link:visited {
+    display: inline-block;
+    text-decoration-color: var(--secondary-colour);
+    text-underline-offset: 15%;
+}
+
+/* ============== */
+/* BG BASE COLOUR */
+/* ============== */
+
+/* Overrides Bootstrap utility class with !important */
+.bg-dark {
+    background-color: var(--surface-dark) !important;
+    color: var(--surface-light) !important;
+}
+
+/* ============== */
+/* COMPONENTS     */
+/* ============== */
+
+/* ----- Buttons ----- */
+/* NOTES */
+/* Change font size to size icons? */
+/* .btn>.material-symbols-rounded {
+    font-size: 2rem;
+} */
+
+.btn {
+    --bs-btn-border-width: 0.1rem;
+    display: inline-flex;
+    gap: 0.5rem;
+    align-items: center;
+    font-family: var(--primary-font-family);
+    font-weight: 300;
+    margin: 0 auto;
+    width: auto;
+}
+
+/* Hover styling */
+.btn-primary:hover, .btn-secondary:hover {
+    box-shadow: var(--2x-box-shadow) var(--surface-dark);
+    transform: translate(-0.1rem, -0.1rem);
+    transition: all ease-in-out 200ms;
+}
+
+/* Dark */
+
+.btn-dark {
+    --bs-btn-bg: var(--surface-dark);
+    --bs-btn-border-color: var(--surface-dark);
+    --bs-btn-hover-bg: var(--surface-dark);
+    --bs-btn-hover-border-color: var(--surface-dark);
+    --bs-btn-active-bg: var(--surface-dark);
+    --bs-btn-active-border-color:var(--surface-dark);
+    --bs-btn-disabled-bg: var(--disabled-control-colour);
+    --bs-btn-disabled-border-color: var(--disabled-control-colour);
+}
+
+.btn-outline-dark {
+    --bs-btn-color: var(--surface-dark);
+    --bs-btn-border-color: var(--surface-dark);
+    --bs-btn-hover-color: var(--surface-light);
+    --bs-btn-hover-bg: var(--surface-dark);
+    --bs-btn-hover-border-color: var(--surface-dark);
+    --bs-btn-focus-shadow-rgb: 13, 110, 253;
+    --bs-btn-active-color: var(--surface-light);
+    --bs-btn-active-bg: var(--surface-dark);
+    --bs-btn-active-border-color: var(--surface-dark);
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: var(--disabled-control-colour);
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: var(--surface-dark);
+    --bs-gradient: none;
+}
+
+/* Light */
+
+.btn-light {
+    --bs-btn-color: var(--surface-dark);
+    --bs-btn-bg: var(--surface-light);
+    --bs-btn-border-color: var(--surface-light);
+    --bs-btn-border-color: var(--surface-light);
+    --bs-btn-hover-bg: var(--surface-light);
+    --bs-btn-hover-border-color: var(--surface-light);
+    --bs-btn-active-bg: var(--surface-light);
+    --bs-btn-active-border-color:var(--surface-light);
+    --bs-btn-disabled-bg: var(--disabled-control-colour);
+    --bs-btn-disabled-border-color: var(--disabled-control-colour);
+}
+
+.btn-outline-light {
+    --bs-btn-color: var(--surface-light);
+    --bs-btn-border-color: var(--surface-light);
+    --bs-btn-hover-color: var(--surface-dark);
+    --bs-btn-hover-bg: var(--surface-light);
+    --bs-btn-hover-border-color: var(--surface-light);
+    --bs-btn-focus-shadow-rgb: 13, 110, 253;
+    --bs-btn-active-color: var(--surface-dark);
+    --bs-btn-active-bg: var(--surface-light);
+    --bs-btn-active-border-color: var(--surface-light);
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: var(--disabled-control-colour);
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: var(--surface-light);
+    --bs-gradient: none;
+}
+
+/* Primary */
+
+.btn-primary {
+    --bs-btn-bg: var(--primary-colour);
+    --bs-btn-border-color: var(--primary-colour);
+    --bs-btn-hover-bg: var(--primary-colour);
+    --bs-btn-hover-border-color: var(--primary-colour);
+    --bs-btn-active-bg: var(--primary-colour);
+    --bs-btn-active-border-color:var(--surface-dark);
+    --bs-btn-disabled-bg: var(--disabled-control-colour);
+    --bs-btn-disabled-border-color: var(--disabled-control-colour);
+}
+
+.btn-outline-primary {
+    --bs-btn-color: var(--primary-colour);
+    --bs-btn-border-color: var(--primary-colour);
+    --bs-btn-hover-color: var(--surface-light);
+    --bs-btn-hover-bg: var(--primary-colour);
+    --bs-btn-hover-border-color: var(--primary-colour);
+    --bs-btn-focus-shadow-rgb: 13, 110, 253;
+    --bs-btn-active-color: var(--surface-light);
+    --bs-btn-active-bg: var(--primary-colour);
+    --bs-btn-active-border-color: var(--primary-colour);
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: var(--disabled-control-colour);
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: var(--primary-colour);
+    --bs-gradient: none;
+}
+
+/* Secondary */
+
+.btn-secondary {
+    --bs-btn-bg: var(--secondary-colour);
+    --bs-btn-border-color: var(--secondary-colour);
+    --bs-btn-bg: var(--secondary-colour);
+    --bs-btn-border-color: var(--secondary-colour);
+    --bs-btn-hover-bg: var(--secondary-colour);
+    --bs-btn-hover-border-color: var(--secondary-colour);
+    --bs-btn-active-bg: var(--secondary-colour);
+    --bs-btn-active-border-color:var(--surface-dark);
+    --bs-btn-disabled-bg: var(--disabled-control-colour);
+    --bs-btn-disabled-border-color: var(--disabled-control-colour);
+}
+
+.btn-outline-secondary {
+    --bs-btn-color: var(--secondary-colour);
+    --bs-btn-border-color: var(--secondary-colour);
+    --bs-btn-hover-color: var(--surface-light);
+    --bs-btn-hover-bg: var(--secondary-colour);
+    --bs-btn-hover-border-color: var(--secondary-colour);
+    --bs-btn-focus-shadow-rgb: 13, 110, 253;
+    --bs-btn-active-color: var(--surface-light);
+    --bs-btn-active-bg: var(--secondary-colour);
+    --bs-btn-active-border-color: var(--secondary-colour);
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: var(--disabled-control-colour);
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: var(--secondary-colour);
+    --bs-gradient: none;
+}
+
+/* Radio Buttons */
+
+/* Chip style radio button set spacing, (use without BS button-group for separated chips) */
+.btn-radio-chip {
+    margin-left: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* ----- Sliders ----- */
+.hero-slider {
+    background: lightgrey;
+    min-height: 22.5rem;
+    
+}
+
+/* ----- Forms ----- */
+
+/* Spacing */
+.form-group .row {
+    margin-bottom: 1rem;
+}
+
+/* Legends & Labels */
+
+.form-legend {
+    font-size: var(--mobile--fieldset-legend);
+    color: var(--secondary-colour);
+    font-weight: normal;
+    font-family: var(--primary-font-family);
+}
+
+.form-label {
+    font-size: var(--mobile--field-label_upper);
+    font-weight: 700;
+}
+
+.form-label-lower {
+    font-family: var(--secondary-font-family);
+    font-size: var(--mobile--field-label_lower);
+}
+
+/* Control - general */
+.form-control, .form-select {
+    color: var(--surface-dark);
+    font-family: var(--secondary-font-family);
+    font-weight: 600;
+    border: var(--form-control-border);
+}
+
+/* Input groups */
+.input-group-text {
+    background-color: inherit;
+    border: var(--form-control-border);
+}
+
+/* Focus ring */
+.form-control:focus, .form-check-input:focus {
+    border: solid 0.05rem var(--primary-colour);
+    box-shadow: 0 0 0 0.25rem var(--custom-focus-ring);
+}
+
+/* Textarea */
+
+.form-control.textarea-maxlength {
+    margin-bottom: 1rem;
+}
+
+/* Checkboxes */
+.form-check {
+    padding-left: 2em;
+}
+
+.form-check-label {
+    padding-left: 1em;
+}
+/* Scaled checkbox - using scale prevents spacing issues */
+.form-check-input {
+    scale: 2;
+}
+
+.form-check-input:checked {
+    background-color: var(--secondary-colour);
+    border-color: var(--secondary-colour);
+}
+
+/* noUISlider input */
+
+/* Handles */
+.noUi-handle {
+    background: var(--surface-dark);
+    border: var(--form-control-border);
+    box-shadow: none;
+}
+
+/* Hide notches */
+.noUi-handle::before, .noUi-handle::after {
+    display: none;
+}
+
+/* Connector range fill */
+.noUi-connect {
+    background-color: var(--primary-colour);
+}
+
+.noUi-pips {
+    font-family: var(--secondary-font-family);
+    color: var(--surface-dark);
+}
+
+/* ----- Cards ----- */
+
+/* .card-stack {
+    border: solid 2px red;
+} */
+
+/* Listing cards */
+.card {
+    --card-border-radius: 0.5rem;
+
+    color: var(--surface-dark);
+    background-color: var(--surface-light);
+    box-shadow: var(--card-shadow);
+    border: solid 0.1rem var(--surface-dark);
+    border-radius: var(--card-border-radius);
+    font-family: var(--secondary-font-family);
+    height: 100%;
+}
+
+.card-cover-img {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 4 / 3;
+    background-color: lightgrey;
+    object-fit: cover;
+    border-radius: var(--card-border-radius);
+}
+
+.card-title {
+    font-size: var(--mobile--card-title);
+    font-family: var(--secondary-font-family);
+    font-weight: 800;
+}
+
+.card-body p {
+    margin: 0;
+}
+
+.card-key-info {
+    font-size: var(--mobile--card-key-info);
+    font-weight: 600;
+}
+
+/* Simple Cards */
+/* Used for one piece of text (category cards)*/
+
+.card-simple-group {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0 auto;
+    padding: 0;
+    gap: 0.5rem;
+}
+
+.card-simple {
+    padding: 1rem;
+    text-align: center;
+    justify-content: center;
+    max-width: 50%;
+    box-sizing: border-box;
+    align-self: center;
+}
+
+.card-simple a {
+    text-decoration: none;
+    color: var(--surface-dark);
+}
+
+
+/* ----- Tags-- --- */
+/* Based on bootstrap badges*/
+.badge {
+    background-color: var(--surface-dark);
+    font-size: var(--mobile--p-text);
+    font-family: var(--secondary-font-family);
+    font-weight: 600;
+    margin-bottom: var(--bs-badge-padding-y);
+}
+
+.tag-giag {
+    background-color: var(--secondary-colour);
+}
+
+.tag-level {
+    background-color: var(--primary-colour);
+}
+
+.tag-location {
+    background-color: var(--tertiary-colour);
+}
+
+/* --- USP Points --- */
+.usp-point-group {
+    list-style-type: none;
+}
+
+.usp-point>.material-symbols-rounded {
+    font-size: 2em;
+}
+/* ============== */
+/* MAIN NAVBAR    */
+/* ============== */
+
+.navbar-dark {
+    background-color: var(--primary-colour);
+}
+
+.navbar-toggler {
+    border: solid 0.1rem;
+}
+
+.nav-link .material-symbols-rounded {
+    font-size: 32px;
+    padding: 0 0.5em;
+}
+
+.nav-link.active {
+    text-decoration: underline;
+    text-decoration-color: var(--surface-light);
+    text-underline-offset: 0.5rem;
+    text-decoration-thickness: 0.25em;
+}
+
+.nav-link:hover, .nav-link:active {
+    color: var(--surface-dark);
+}
