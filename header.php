@@ -99,7 +99,7 @@
                 </div>
             </div>
         </nav> <!-- end Main nav -->
-		
+
 	</header><!-- #masthead -->
 
-	<main class="container-fluid">
+	<div id="content" class="site-content">
