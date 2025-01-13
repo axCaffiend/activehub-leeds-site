@@ -574,18 +574,24 @@ a {
     border: solid 0.1rem;
 }
 
-.nav-link .material-symbols-rounded {
-    font-size: 32px;
-    padding: 0 0.5em;
+.nav-link {
+    color: var(--surface-light);
+    font-family: var(--secondary-font-family);
+    font-size: 1.25rem;
+    font-weight: 400;
 }
-
-.nav-link.active {
+/* Current page link */
+.nav-item a[aria-current="page"] {
     text-decoration: underline;
     text-decoration-color: var(--surface-light);
     text-underline-offset: 0.5rem;
     text-decoration-thickness: 0.25em;
 }
 
-.nav-link:hover, .nav-link:active {
-    color: var(--surface-dark);
+.nav-link:hover, .nav-link:focus, .nav-link:active {
+    color: var(--surface-dark) !important;
+}
+
+.nav-link:visited {
+    color: var(--surface-light);
 }

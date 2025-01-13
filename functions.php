@@ -218,3 +218,23 @@ remove_action( 'shutdown', 'wp_ob_end_flush_all', 1 );
 add_action( 'shutdown', function() {
    while ( @ob_end_flush() );
 } );
+
+// ** Main Navigation filters**
+// Add 'nav-item' Bootstrap class to list elements in main nav
+
+function add_class_nav_item_bs($classes, $item, $args) {
+    if(isset($args->add_nav_item_bs_class)) {
+        $classes[] = $args->add_nav_item_bs_class;
+    }
+    return $classes;
+}
+add_filter('nav_menu_css_class', 'add_class_nav_item_bs', 1, 3);
+
+// Add 'nav-link' Bootstrap class to anchor elements in main nav list items
+function add_class_nav_link_bs($atts, $item, $args) {
+    if(isset($args->add_nav_link_bs_class)) {
+        $atts['class'] = $args->add_nav_link_bs_class;
+    }
+    return $atts;
+}
+add_filter('nav_menu_link_attributes', 'add_class_nav_link_bs', 1, 3);
