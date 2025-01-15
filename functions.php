@@ -238,3 +238,23 @@ function add_class_nav_link_bs($atts, $item, $args) {
     return $atts;
 }
 add_filter('nav_menu_link_attributes', 'add_class_nav_link_bs', 1, 3);
+
+// Change dashboard Posts to Organisers
+add_action( 'init', 'my_change_post_object' );
+	function my_change_post_object() {
+	$get_post_type = get_post_type_object('post');
+	$labels = $get_post_type->labels;
+	$labels->name = 'Organisers';
+	$labels->singular_name = 'Organiser';
+	$labels->add_new = 'Add New';
+	$labels->add_new_item = 'Add Organiser';
+	$labels->edit_item = 'Edit Organiser';
+	$labels->new_item = 'Organiser';
+	$labels->view_item = 'View Organiser';
+	$labels->search_items = 'Search Organisers';
+	$labels->not_found = 'No Organisers found';
+	$labels->not_found_in_trash = 'No Organisers found in Trash';
+	$labels->all_items = 'All Organisers';
+	$labels->menu_name = 'Organisers';
+	$labels->name_admin_bar = 'Organisers';
+}
