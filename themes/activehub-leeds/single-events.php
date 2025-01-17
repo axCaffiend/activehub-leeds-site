@@ -16,7 +16,7 @@ get_header();
 		while ( have_posts() ) :
 			the_post();
 
-			get_template_part( 'template-parts/content-event', get_post_type() );
+			get_template_part( 'template-parts/content', 'event' );
 
 			the_post_navigation(
 				array(

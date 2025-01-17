@@ -69,10 +69,8 @@ function create_eventtypes_taxonomy() {
 
 add_action( 'init', 'create_tag_taxonomies', 0 );
 
-//create two taxonomies, genres and tags for the post type "tag"
 function create_tag_taxonomies() 
 {
-  // Add new taxonomy, NOT hierarchical (like tags)
   $labels = array(
     'name' => _x( 'Tags', 'taxonomy general name' ),
     'singular_name' => _x( 'Tag', 'taxonomy singular name' ),
