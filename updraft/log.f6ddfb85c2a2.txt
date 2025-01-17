@@ -1,0 +1,267 @@
+0000.001 (0) Opened log file at time: Mon, 13 Jan 2025 05:38:50 +0000 on http://localhost/wordpress
+0000.003 (0) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.25.1 WP: 6.7.1 PHP: 8.3.1 (apache2handler, Windows NT DESKTOP-U8AJMIO 6.2 build 9200 (Windows 8 Home Premium Edition) AMD64) MySQL: 5.7.24 (max packet size=1048576) WPLANG: en_US Server: Apache/2.4.33 (Win64) OpenSSL/1.0.2u mod_fcgid/2.3.9 PHP/8.3.1 safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 46.8M | 50M) multisite: N openssl: OpenSSL 3.0.12 24 Oct 2023 mcrypt: N LANG:  ZipArchive::addFile: Y
+0000.005 (0) Free space on disk containing Updraft's temporary directory: 249096.3 MB
+0000.010 (0) Tasks: Backup files: 1 (schedule: daily) Backup DB: 1 (schedule: daily)
+0000.016 (0) Requesting semaphore lock (fd) (apparently not via scheduler)
+0000.021 (0) Set semaphore last lock (fd) time to 2025-01-13 05:38:50
+0000.023 (0) Semaphore lock (fd) complete
+0000.029 (0) Backup run: resumption=0, nonce=f6ddfb85c2a2, file_nonce=f6ddfb85c2a2 begun at=1736746730 (0s ago), job type=backup
+0000.032 (0) Scheduling a resumption (1) after 300 seconds (1736747030) in case this run gets aborted
+0000.049 (0) Checking if we have a zip executable available
+0000.053 (0) Creation of backups of directories: beginning
+0000.062 (0) Beginning creation of dump of plugins (split every: 400 MB)
+0001.649 (0) Total entities for the zip file: 345 directories, 2138 files (0 skipped as non-modified), 51 MB
+0001.760 (0) Zip: backup_2025-01-13-0538_ActiveHub_Leeds_f6ddfb85c2a2-plugins.zip.tmp: 100 files added (on-disk size: 0 KB)
+0001.861 (0) Zip: backup_2025-01-13-0538_ActiveHub_Leeds_f6ddfb85c2a2-plugins.zip.tmp: 200 files added (on-disk size: 0 KB)
+0001.967 (0) Zip: backup_2025-01-13-0538_ActiveHub_Leeds_f6ddfb85c2a2-plugins.zip.tmp: 300 files added (on-disk size: 0 KB)
+0002.066 (0) Zip: backup_2025-01-13-0538_ActiveHub_Leeds_f6ddfb85c2a2-plugins.zip.tmp: 400 files added (on-disk size: 0 KB)
+0002.086 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (7.9 MB, 420 (420) files added so far); re-opening (prior size: 0 KB)
+0002.889 (0) Zip: backup_2025-01-13-0538_ActiveHub_Leeds_f6ddfb85c2a2-plugins.zip.tmp: 500 files added (on-disk size: 2796.5 KB)
+0002.973 (0) Zip: backup_2025-01-13-0538_ActiveHub_Leeds_f6ddfb85c2a2-plugins.zip.tmp: 600 files added (on-disk size: 2796.5 KB)
+0003.065 (0) Zip: backup_2025-01-13-0538_ActiveHub_Leeds_f6ddfb85c2a2-plugins.zip.tmp: 700 files added (on-disk size: 2796.5 KB)
+0003.155 (0) Zip: backup_2025-01-13-0538_ActiveHub_Leeds_f6ddfb85c2a2-plugins.zip.tmp: 800 files added (on-disk size: 2796.5 KB)
+0003.243 (0) Zip: backup_2025-01-13-0538_ActiveHub_Leeds_f6ddfb85c2a2-plugins.zip.tmp: 900 files added (on-disk size: 2796.5 KB)
+0003.326 (0) Zip: backup_2025-01-13-0538_ActiveHub_Leeds_f6ddfb85c2a2-plugins.zip.tmp: 1000 files added (on-disk size: 2796.5 KB)
+0003.412 (0) Zip: backup_2025-01-13-0538_ActiveHub_Leeds_f6ddfb85c2a2-plugins.zip.tmp: 1100 files added (on-disk size: 2796.5 KB)
+0003.497 (0) Zip: backup_2025-01-13-0538_ActiveHub_Leeds_f6ddfb85c2a2-plugins.zip.tmp: 1200 files added (on-disk size: 2796.5 KB)
+0003.541 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 25 MB added on this batch (25.4 MB, 2138 files batched, 827 (1247) added so far); re-opening (prior size: 2796.5 KB)
+0005.911 (0) A useful amount of data was added after this amount of zip processing: 3.8 s (normalised: 3.8 s, rate: 6792.5 KB/s)
+0005.915 (0) Performance is good - will increase the amount of data we attempt to batch (time=3.8263800144196, normalised_time=3.7688510643334, max_time=5.9125239849091, data points known=1, old_max_bytes=26214400, new_max_bytes=41733249)
+0005.991 (0) Zip: backup_2025-01-13-0538_ActiveHub_Leeds_f6ddfb85c2a2-plugins.zip.tmp: 1300 files added (on-disk size: 11209.8 KB)
+0006.083 (0) Zip: backup_2025-01-13-0538_ActiveHub_Leeds_f6ddfb85c2a2-plugins.zip.tmp: 1400 files added (on-disk size: 11209.8 KB)
+0006.177 (0) Zip: backup_2025-01-13-0538_ActiveHub_Leeds_f6ddfb85c2a2-plugins.zip.tmp: 1500 files added (on-disk size: 11209.8 KB)
+0006.273 (0) Zip: backup_2025-01-13-0538_ActiveHub_Leeds_f6ddfb85c2a2-plugins.zip.tmp: 1600 files added (on-disk size: 11209.8 KB)
+0006.417 (0) Zip: backup_2025-01-13-0538_ActiveHub_Leeds_f6ddfb85c2a2-plugins.zip.tmp: 1700 files added (on-disk size: 11209.8 KB)
+0006.504 (0) Zip: backup_2025-01-13-0538_ActiveHub_Leeds_f6ddfb85c2a2-plugins.zip.tmp: 1800 files added (on-disk size: 11209.8 KB)
+0006.593 (0) Zip: backup_2025-01-13-0538_ActiveHub_Leeds_f6ddfb85c2a2-plugins.zip.tmp: 1900 files added (on-disk size: 11209.8 KB)
+0006.680 (0) Zip: backup_2025-01-13-0538_ActiveHub_Leeds_f6ddfb85c2a2-plugins.zip.tmp: 2000 files added (on-disk size: 11209.8 KB)
+0006.767 (0) Zip: backup_2025-01-13-0538_ActiveHub_Leeds_f6ddfb85c2a2-plugins.zip.tmp: 2100 files added (on-disk size: 11209.8 KB)
+0009.032 (0) Creating zip file manifest (backup_2025-01-13-0538_ActiveHub_Leeds_f6ddfb85c2a2-plugins.zip.list-temp.tmp)
+0009.113 (0) Successfully created zip file manifest (size: 177579)
+0009.308 (0) Created plugins zip (0) - 16040.7 KB in 9.2 s (1736.7 KB/s) (sha1: 806d29c78aa6e7bdc0ee600f5501dbe168177864, sha256: 2a50d0200ffb045673b1813a383afeff7aa0d4a08b909e59c94c2c57d5beac5d)
+0009.320 (0) Cloud backup selection (1/1): googledrive with instance (1/1) (last)
+0009.323 (0) Beginning dispatch of backup to remote (googledrive) (instance identifier s-4da935d3105fa202e39c9d21b24c2241)
+0013.908 (0) Google Drive: quota usage: used=12840 MB, total=102400 MB, available=89560 MB
+0013.911 (0) Google Drive: backup_2025-01-13-0538_ActiveHub_Leeds_f6ddfb85c2a2-plugins.zip: Attempting to upload to Google Drive (into folder id: 14LtDfO70iB2St0CgfTWHHGzI9f4ptk92)
+0016.593 (0) Googledrive chunked upload: 6.4 % uploaded (1048576)
+0017.823 (0) Googledrive chunked upload: 12.8 % uploaded (2097152 - increasing chunk size to 2048 KB - memory usage: 49.8 / 52)
+0019.323 (0) Googledrive chunked upload: 25.5 % uploaded (4194304 - increasing chunk size to 4096 KB - memory usage: 49.8 / 52)
+0021.438 (0) Googledrive chunked upload: 51.1 % uploaded (8388608 - increasing chunk size to 8192 KB - memory usage: 49.8 / 52)
+0025.336 (0) Googledrive chunked upload: 100 % uploaded (8388608)
+0025.343 (0) Google Drive: OK: Archive backup_2025-01-13-0538_ActiveHub_Leeds_f6ddfb85c2a2-plugins.zip uploaded in 11.43 seconds
+0025.346 (0) Recording as successfully uploaded: backup_2025-01-13-0538_ActiveHub_Leeds_f6ddfb85c2a2-plugins.zip
+0025.353 (0) Deleting local file: backup_2025-01-13-0538_ActiveHub_Leeds_f6ddfb85c2a2-plugins.zip: OK
+0025.365 (0) Beginning creation of dump of themes (split every: 400 MB)
+0025.786 (0) Total entities for the zip file: 171 directories, 591 files (0 skipped as non-modified), 127.6 MB
+0025.877 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 39.8 MB added on this batch (41.7 MB, 591 files batched, 96 (96) added so far); re-opening (prior size: 0 KB)
+0027.584 (0) A useful amount of data was added after this amount of zip processing: 2.5 s (normalised: 2.4 s, rate: 17083.9 KB/s)
+0027.588 (0) Performance is good - will increase the amount of data we attempt to batch (time=2.4993948936462, normalised_time=2.3855893064745, max_time=27.585728883743, data points known=1, old_max_bytes=41733249, new_max_bytes=209715200)
+0027.598 (0) Zip: backup_2025-01-13-0538_ActiveHub_Leeds_f6ddfb85c2a2-themes.zip.tmp: 100 files added (on-disk size: 42730.7 KB)
+0027.692 (0) Zip: backup_2025-01-13-0538_ActiveHub_Leeds_f6ddfb85c2a2-themes.zip.tmp: 200 files added (on-disk size: 42730.7 KB)
+0027.780 (0) Zip: backup_2025-01-13-0538_ActiveHub_Leeds_f6ddfb85c2a2-themes.zip.tmp: 300 files added (on-disk size: 42730.7 KB)
+0027.863 (0) Zip: backup_2025-01-13-0538_ActiveHub_Leeds_f6ddfb85c2a2-themes.zip.tmp: 400 files added (on-disk size: 42730.7 KB)
+0027.950 (0) Zip: backup_2025-01-13-0538_ActiveHub_Leeds_f6ddfb85c2a2-themes.zip.tmp: 500 files added (on-disk size: 42730.7 KB)
+0030.046 (0) Creating zip file manifest (backup_2025-01-13-0538_ActiveHub_Leeds_f6ddfb85c2a2-themes.zip.list-temp.tmp)
+0030.070 (0) Successfully created zip file manifest (size: 43990)
+0031.671 (0) Created themes zip (0) - 129627.4 KB in 6.3 s (20589.3 KB/s) (sha1: 2c77952ad3ed20ea3e0a48ed72102486d3b73096, sha256: 0ceeb82b947c020ab1d2104384d5d45a9b8175bc990f20c9c64b22c0cef07d8a)
+0031.679 (0) Cloud backup selection (1/1): googledrive with instance (1/1) (last)
+0031.682 (0) Beginning dispatch of backup to remote (googledrive) (instance identifier s-4da935d3105fa202e39c9d21b24c2241)
+0032.769 (0) Google Drive: quota usage: used=12855.7 MB, total=102400 MB, available=89544.3 MB
+0032.771 (0) Google Drive: backup_2025-01-13-0538_ActiveHub_Leeds_f6ddfb85c2a2-themes.zip: Attempting to upload to Google Drive (into folder id: 14LtDfO70iB2St0CgfTWHHGzI9f4ptk92)
+0035.509 (0) Googledrive chunked upload: 0.8 % uploaded (1048576)
+0036.780 (0) Googledrive chunked upload: 1.6 % uploaded (2097152 - increasing chunk size to 2048 KB - memory usage: 49.5 / 52)
+0038.407 (0) Googledrive chunked upload: 3.2 % uploaded (4194304 - increasing chunk size to 4096 KB - memory usage: 49.5 / 52)
+0040.751 (0) Googledrive chunked upload: 6.3 % uploaded (8388608 - increasing chunk size to 8192 KB - memory usage: 49.5 / 52)
+0043.575 (0) Googledrive chunked upload: 12.6 % uploaded (16777216)
+0046.433 (0) Googledrive chunked upload: 19 % uploaded (25165824)
+0049.336 (0) Googledrive chunked upload: 25.3 % uploaded (33554432)
+0052.245 (0) Googledrive chunked upload: 31.6 % uploaded (41943040)
+0055.141 (0) Googledrive chunked upload: 37.9 % uploaded (50331648)
+0058.034 (0) Googledrive chunked upload: 44.2 % uploaded (58720256)
+0060.838 (0) Googledrive chunked upload: 50.6 % uploaded (67108864)
+0063.658 (0) Googledrive chunked upload: 56.9 % uploaded (75497472)
+0066.497 (0) Googledrive chunked upload: 63.2 % uploaded (83886080)
+0069.352 (0) Googledrive chunked upload: 69.5 % uploaded (92274688)
+0072.295 (0) Googledrive chunked upload: 75.8 % uploaded (100663296)
+0075.188 (0) Googledrive chunked upload: 82.2 % uploaded (109051904)
+0078.370 (0) Googledrive chunked upload: 88.5 % uploaded (117440512)
+0081.223 (0) Googledrive chunked upload: 94.8 % uploaded (125829120)
+0084.960 (0) Googledrive chunked upload: 100 % uploaded (125829120)
+0084.965 (0) Google Drive: OK: Archive backup_2025-01-13-0538_ActiveHub_Leeds_f6ddfb85c2a2-themes.zip uploaded in 52.19 seconds
+0084.967 (0) Recording as successfully uploaded: backup_2025-01-13-0538_ActiveHub_Leeds_f6ddfb85c2a2-themes.zip
+0084.984 (0) Deleting local file: backup_2025-01-13-0538_ActiveHub_Leeds_f6ddfb85c2a2-themes.zip: OK
+0084.994 (0) Exclusion option setting (uploads): backup*,*backups,backwpup*,wp-clone,snapshots
+0084.996 (0) Looking for candidates to backup in: C:\MAMP\htdocs\wordpress/wp-content/uploads
+0084.998 (0) finding files: 2025: adding to list (1)
+0085.000 (0) Beginning creation of dump of uploads (split every: 400 MB)
+0085.010 (0) Total entities for the zip file: 2 directories, 1 files (0 skipped as non-modified), 0 MB
+0085.021 (0) Creating zip file manifest (backup_2025-01-13-0538_ActiveHub_Leeds_f6ddfb85c2a2-uploads.zip.list-temp.tmp)
+0085.026 (0) Successfully created zip file manifest (size: 68)
+0085.038 (0) Created uploads zip (0) - 3.3 KB in 0 s (109.2 KB/s) (sha1: aba4c9741688fe910792f3144aa0ca40138e8ddb, sha256: 331c39d19857e02542694076c19c02eb0ba200f5e1f58fbf5236e22669bbd474)
+0085.046 (0) Cloud backup selection (1/1): googledrive with instance (1/1) (last)
+0085.048 (0) Beginning dispatch of backup to remote (googledrive) (instance identifier s-4da935d3105fa202e39c9d21b24c2241)
+0086.149 (0) Google Drive: quota usage: used=12982.2 MB, total=102400 MB, available=89417.8 MB
+0086.230 (0) Google Drive: backup_2025-01-13-0538_ActiveHub_Leeds_f6ddfb85c2a2-uploads.zip: Attempting to upload to Google Drive (into folder id: 14LtDfO70iB2St0CgfTWHHGzI9f4ptk92)
+0089.985 (0) Googledrive chunked upload: 100 % uploaded
+0089.991 (0) Google Drive: OK: Archive backup_2025-01-13-0538_ActiveHub_Leeds_f6ddfb85c2a2-uploads.zip uploaded in 3.63 seconds
+0089.993 (0) Recording as successfully uploaded: backup_2025-01-13-0538_ActiveHub_Leeds_f6ddfb85c2a2-uploads.zip
+0089.997 (0) Deleting local file: backup_2025-01-13-0538_ActiveHub_Leeds_f6ddfb85c2a2-uploads.zip: OK
+0090.004 (0) No backup of mu-plugins: excluded by user's options
+0090.008 (0) Beginning backup of other directories found in the content directory (index: 0)
+0090.010 (0) Exclusion option setting (others): upgrade,cache,updraft,backup*,*backups,mysql.sql,debug.log
+0090.012 (0) Looking for candidates to backup in: C:\MAMP\htdocs\wordpress/wp-content
+0090.014 (0) finding files: index.php: adding to list (1)
+0090.016 (0) finding files: plugins: skipping: this is the plugins directory
+0090.018 (0) finding files: themes: skipping: this is the themes directory
+0090.019 (0) finding files: updraft: skipping: this is the updraft directory
+0090.021 (0) finding files: upgrade: skipping: excluded by options
+0090.023 (0) finding files: upgrade-temp-backup: adding to list (2)
+0090.025 (0) finding files: uploads: skipping: this is the uploads directory
+0090.037 (0) Total entities for the zip file: 2 directories, 1 files (0 skipped as non-modified), 0 MB
+0090.056 (0) Creating zip file manifest (backup_2025-01-13-0538_ActiveHub_Leeds_f6ddfb85c2a2-others.zip.list-temp.tmp)
+0090.061 (0) Successfully created zip file manifest (size: 43)
+0090.075 (0) Created others zip (0) - 0.4 KB in 0 s (9.5 KB/s) (sha1: a7aa212a03bd2f5c4d9c76e46eaaa017949c1ed7, sha256: 3f47be21f947fd099918cc2124e041d421a2aee8c6e9b51012cc10ffae5b4ff0)
+0090.083 (0) Cloud backup selection (1/1): googledrive with instance (1/1) (last)
+0090.086 (0) Beginning dispatch of backup to remote (googledrive) (instance identifier s-4da935d3105fa202e39c9d21b24c2241)
+0091.317 (0) Google Drive: quota usage: used=12982.3 MB, total=102400 MB, available=89417.7 MB
+0091.320 (0) Google Drive: backup_2025-01-13-0538_ActiveHub_Leeds_f6ddfb85c2a2-others.zip: Attempting to upload to Google Drive (into folder id: 14LtDfO70iB2St0CgfTWHHGzI9f4ptk92)
+0094.504 (0) Googledrive chunked upload: 100 % uploaded
+0094.509 (0) Google Drive: OK: Archive backup_2025-01-13-0538_ActiveHub_Leeds_f6ddfb85c2a2-others.zip uploaded in 3.19 seconds
+0094.510 (0) Recording as successfully uploaded: backup_2025-01-13-0538_ActiveHub_Leeds_f6ddfb85c2a2-others.zip
+0094.514 (0) Deleting local file: backup_2025-01-13-0538_ActiveHub_Leeds_f6ddfb85c2a2-others.zip: OK
+0094.525 (0) Saving backup status to database (elements: 8)
+0094.531 (0) Beginning creation of database dump (WordPress DB)
+0094.533 (0) SQL compatibility mode is: NO_ZERO_IN_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION
+0094.560 (0) Table wp_options: Total expected rows (via COUNT): 255
+0094.561 (0) Table is relatively small; fetch_rows will thus be: 500 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0094.633 (0) Table wp_options: Rows added in this batch (next record: 455): 251 (uncompressed bytes in this segment=1494050) in 0.08 seconds
+0094.653 (0) Table wp_options: finishing file(s) (2, 301.6 KB)
+0094.661 (0) Table wp_users: Total expected rows (via COUNT): 2
+0094.663 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0094.667 (0) Table wp_users: Rows added in this batch (next record: 2): 2 (uncompressed bytes in this segment=1563) in 0.01 seconds
+0094.682 (0) Table wp_users: finishing file(s) (2, 0.7 KB)
+0094.693 (0) Table wp_usermeta: Total expected rows (via COUNT): 39
+0094.695 (0) Table is relatively small; fetch_rows will thus be: 50 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0094.700 (0) Table wp_usermeta: Rows added in this batch (next record: 39): 39 (uncompressed bytes in this segment=2934) in 0.01 seconds
+0094.717 (0) Table wp_usermeta: finishing file(s) (2, 1.3 KB)
+0094.728 (0) Table wp_commentmeta: Total expected rows (via COUNT): 0
+0094.731 (0) Table wp_commentmeta: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=685) in 0.01 seconds
+0094.747 (0) Table wp_commentmeta: finishing file(s) (2, 0.4 KB)
+0094.756 (0) Table wp_comments: Total expected rows (via COUNT): 1
+0094.758 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0094.762 (0) Table wp_comments: Rows added in this batch (next record: 1): 1 (uncompressed bytes in this segment=2138) in 0.01 seconds
+0094.812 (0) Table wp_comments: finishing file(s) (2, 0.7 KB)
+0094.820 (0) Table wp_links: Total expected rows (via COUNT): 0
+0094.824 (0) Table wp_links: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1310) in 0.01 seconds
+0094.841 (0) Table wp_links: finishing file(s) (2, 0.5 KB)
+0094.852 (0) Table wp_postmeta: Total expected rows (via COUNT): 179
+0094.853 (0) Table is relatively small; fetch_rows will thus be: 250 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0094.859 (0) Table wp_postmeta: Rows added in this batch (next record: 188): 179 (uncompressed bytes in this segment=9309) in 0.01 seconds
+0094.877 (0) Table wp_postmeta: finishing file(s) (2, 2 KB)
+0094.887 (0) Table wp_posts: Total expected rows (via COUNT): 35
+0094.888 (0) Table is relatively small; fetch_rows will thus be: 50 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0094.894 (0) Table wp_posts: Rows added in this batch (next record: 35): 35 (uncompressed bytes in this segment=26182) in 0.01 seconds
+0094.914 (0) Table wp_posts: finishing file(s) (2, 4.3 KB)
+0094.922 (0) Table wp_term_relationships: Total expected rows (approximate): 0
+0094.926 (0) Table wp_term_relationships: Rows added in this batch (next record: 100000): 5 (uncompressed bytes in this segment=753) in 0.00 seconds
+0094.942 (0) Table wp_term_relationships: finishing file(s) (2, 0.4 KB)
+0094.952 (0) Table wp_term_taxonomy: Total expected rows (via COUNT): 3
+0094.954 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0094.958 (0) Table wp_term_taxonomy: Rows added in this batch (next record: 3): 3 (uncompressed bytes in this segment=988) in 0.01 seconds
+0094.975 (0) Table wp_term_taxonomy: finishing file(s) (2, 0.5 KB)
+0094.987 (0) Table wp_termmeta: Total expected rows (via COUNT): 0
+0094.992 (0) Table wp_termmeta: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=658) in 0.01 seconds
+0095.011 (0) Table wp_termmeta: finishing file(s) (2, 0.4 KB)
+0095.019 (0) Table wp_terms: Total expected rows (via COUNT): 3
+0095.021 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0095.027 (0) Table wp_terms: Rows added in this batch (next record: 3): 3 (uncompressed bytes in this segment=820) in 0.01 seconds
+0095.045 (0) Table wp_terms: finishing file(s) (2, 0.5 KB)
+0095.047 (0) PHP event: code E_WARNING: filemtime(): stat failed for C:\MAMP\htdocs\wordpress/wp-content/updraft/backup_2025-01-13-0538_ActiveHub_Leeds_f6ddfb85c2a2-db.gz (line 1923, C:\MAMP\htdocs\wordpress\wp-content\plugins\updraftplus\backup.php)
+0095.052 (0) backup_2025-01-13-0538_ActiveHub_Leeds_f6ddfb85c2a2-db-table-wp_options.table.tmpr456.gz (1/12/fopen): adding to final database dump
+0095.080 (0) backup_2025-01-13-0538_ActiveHub_Leeds_f6ddfb85c2a2-db-table-wp_options.table.gz (2/12/fopen): adding to final database dump
+0095.083 (0) backup_2025-01-13-0538_ActiveHub_Leeds_f6ddfb85c2a2-db-table-wp_users.table.tmpr3.gz (3/12/fopen): adding to final database dump
+0095.086 (0) backup_2025-01-13-0538_ActiveHub_Leeds_f6ddfb85c2a2-db-table-wp_users.table.gz (4/12/fopen): adding to final database dump
+0095.089 (0) backup_2025-01-13-0538_ActiveHub_Leeds_f6ddfb85c2a2-db-table-wp_usermeta.table.tmpr40.gz (5/12/fopen): adding to final database dump
+0095.091 (0) backup_2025-01-13-0538_ActiveHub_Leeds_f6ddfb85c2a2-db-table-wp_usermeta.table.gz (6/12/fopen): adding to final database dump
+0095.093 (0) backup_2025-01-13-0538_ActiveHub_Leeds_f6ddfb85c2a2-db-table-wp_commentmeta.table.tmpr0.gz (7/12/fopen): adding to final database dump
+0095.095 (0) backup_2025-01-13-0538_ActiveHub_Leeds_f6ddfb85c2a2-db-table-wp_commentmeta.table.gz (8/12/fopen): adding to final database dump
+0095.097 (0) backup_2025-01-13-0538_ActiveHub_Leeds_f6ddfb85c2a2-db-table-wp_comments.table.tmpr2.gz (9/12/fopen): adding to final database dump
+0095.099 (0) backup_2025-01-13-0538_ActiveHub_Leeds_f6ddfb85c2a2-db-table-wp_comments.table.gz (10/12/fopen): adding to final database dump
+0095.102 (0) backup_2025-01-13-0538_ActiveHub_Leeds_f6ddfb85c2a2-db-table-wp_links.table.tmpr0.gz (11/12/fopen): adding to final database dump
+0095.104 (0) backup_2025-01-13-0538_ActiveHub_Leeds_f6ddfb85c2a2-db-table-wp_links.table.gz (12/12/fopen): adding to final database dump
+0095.107 (0) backup_2025-01-13-0538_ActiveHub_Leeds_f6ddfb85c2a2-db-table-wp_postmeta.table.tmpr189.gz (13/12/fopen): adding to final database dump
+0095.109 (0) backup_2025-01-13-0538_ActiveHub_Leeds_f6ddfb85c2a2-db-table-wp_postmeta.table.gz (14/12/fopen): adding to final database dump
+0095.111 (0) backup_2025-01-13-0538_ActiveHub_Leeds_f6ddfb85c2a2-db-table-wp_posts.table.tmpr36.gz (15/12/fopen): adding to final database dump
+0095.113 (0) backup_2025-01-13-0538_ActiveHub_Leeds_f6ddfb85c2a2-db-table-wp_posts.table.gz (16/12/fopen): adding to final database dump
+0095.115 (0) backup_2025-01-13-0538_ActiveHub_Leeds_f6ddfb85c2a2-db-table-wp_term_relationships.table.tmpr100001.gz (17/12/fopen): adding to final database dump
+0095.117 (0) backup_2025-01-13-0538_ActiveHub_Leeds_f6ddfb85c2a2-db-table-wp_term_relationships.table.gz (18/12/fopen): adding to final database dump
+0095.119 (0) backup_2025-01-13-0538_ActiveHub_Leeds_f6ddfb85c2a2-db-table-wp_term_taxonomy.table.tmpr4.gz (19/12/fopen): adding to final database dump
+0095.121 (0) backup_2025-01-13-0538_ActiveHub_Leeds_f6ddfb85c2a2-db-table-wp_term_taxonomy.table.gz (20/12/fopen): adding to final database dump
+0095.123 (0) backup_2025-01-13-0538_ActiveHub_Leeds_f6ddfb85c2a2-db-table-wp_termmeta.table.tmpr0.gz (21/12/fopen): adding to final database dump
+0095.126 (0) backup_2025-01-13-0538_ActiveHub_Leeds_f6ddfb85c2a2-db-table-wp_termmeta.table.gz (22/12/fopen): adding to final database dump
+0095.128 (0) backup_2025-01-13-0538_ActiveHub_Leeds_f6ddfb85c2a2-db-table-wp_terms.table.tmpr4.gz (23/12/fopen): adding to final database dump
+0095.130 (0) backup_2025-01-13-0538_ActiveHub_Leeds_f6ddfb85c2a2-db-table-wp_terms.table.gz (24/12/fopen): adding to final database dump
+0095.144 (0) backup_2025-01-13-0538_ActiveHub_Leeds_f6ddfb85c2a2-db.gz: finished writing out complete database file (313.6 KB)
+0095.169 (0) Total database tables backed up: 12 (backup_2025-01-13-0538_ActiveHub_Leeds_f6ddfb85c2a2-db.gz, size: 321283, sha1: 626e7f1be25cfe0a302327a99c706cea359c986e, sha256: 1eda15de94c155af9464bcb0ba912e1dc6f5a32b88ef654f3e1233dabf6e2140)
+0095.179 (0) backup_2025-01-13-0538_ActiveHub_Leeds_f6ddfb85c2a2-plugins.zip: plugins: This file has already been successfully uploaded
+0095.181 (0) backup_2025-01-13-0538_ActiveHub_Leeds_f6ddfb85c2a2-themes.zip: themes: This file has already been successfully uploaded
+0095.183 (0) backup_2025-01-13-0538_ActiveHub_Leeds_f6ddfb85c2a2-uploads.zip: uploads: This file has already been successfully uploaded
+0095.185 (0) backup_2025-01-13-0538_ActiveHub_Leeds_f6ddfb85c2a2-others.zip: others: This file has already been successfully uploaded
+0095.187 (0) backup_2025-01-13-0538_ActiveHub_Leeds_f6ddfb85c2a2-db.gz: db: This file has not yet been successfully uploaded: will queue
+0095.188 (0) Saving backup history. Total backup size: 142.6 MB
+0095.193 (0) Requesting upload of the files that have not yet been successfully uploaded (1)
+0095.199 (0) Cloud backup selection (1/1): googledrive with instance (1/1) (last)
+0095.201 (0) Beginning dispatch of backup to remote (googledrive) (instance identifier s-4da935d3105fa202e39c9d21b24c2241)
+0096.248 (0) Google Drive: quota usage: used=12982.3 MB, total=102400 MB, available=89417.7 MB
+0096.250 (0) Google Drive: backup_2025-01-13-0538_ActiveHub_Leeds_f6ddfb85c2a2-db.gz: Attempting to upload to Google Drive (into folder id: 14LtDfO70iB2St0CgfTWHHGzI9f4ptk92)
+0099.534 (0) Googledrive chunked upload: 100 % uploaded
+0099.541 (0) Google Drive: OK: Archive backup_2025-01-13-0538_ActiveHub_Leeds_f6ddfb85c2a2-db.gz uploaded in 3.29 seconds
+0099.543 (0) Recording as successfully uploaded: backup_2025-01-13-0538_ActiveHub_Leeds_f6ddfb85c2a2-db.gz
+0099.548 (0) Deleting local file: backup_2025-01-13-0538_ActiveHub_Leeds_f6ddfb85c2a2-db.gz: OK
+0099.552 (0) Retain: beginning examination of existing backup sets; user setting: retain_files=5, retain_db=5
+0099.555 (0) Number of backup sets in history: 6; groups (db): 1
+0099.557 (0) Examining (for databases) backup set with group_id=0, nonce=f6ddfb85c2a2, datestamp=1736746730 (Jan 13 2025 05:38:50)
+0099.558 (0) This backup set is the backup set just made, so will not be deleted.
+0099.558 (0) Examining (for databases) backup set with group_id=0, nonce=3860034920e8, datestamp=1736741857 (Jan 13 2025 04:17:37)
+0099.558 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0099.560 (0) Examining (for databases) backup set with group_id=0, nonce=65c2a44963ee, datestamp=1736712007 (Jan 12 2025 20:00:07)
+0099.560 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0099.560 (0) Examining (for databases) backup set with group_id=0, nonce=0f5b5622fe74, datestamp=1736569091 (Jan 11 2025 04:18:11)
+0099.560 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0099.560 (0) Examining (for databases) backup set with group_id=0, nonce=6d83ba9f37a6, datestamp=1736569002 (Jan 11 2025 04:16:42)
+0099.560 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0099.560 (0) Examining (for databases) backup set with group_id=0, nonce=6d83ba9f37a6, datestamp=1736568960 (Jan 11 2025 04:16:00)
+0099.560 (0) Number of backup sets in history: 6; groups (files): 1
+0099.562 (0) Examining (for files) backup set with nonce=f6ddfb85c2a2, datestamp=1736746730 (Jan 13 2025 05:38:50)
+0099.562 (0) This backup set is the backup set just made, so will not be deleted.
+0099.563 (0) This backup set is the backup set just made, so will not be deleted.
+0099.563 (0) This backup set is the backup set just made, so will not be deleted.
+0099.563 (0) This backup set is the backup set just made, so will not be deleted.
+0099.563 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0099.565 (0) Examining (for files) backup set with nonce=3860034920e8, datestamp=1736741857 (Jan 13 2025 04:17:37)
+0099.565 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0099.565 (0) Examining (for files) backup set with nonce=65c2a44963ee, datestamp=1736712007 (Jan 12 2025 20:00:07)
+0099.565 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0099.565 (0) Examining (for files) backup set with nonce=0f5b5622fe74, datestamp=1736569091 (Jan 11 2025 04:18:11)
+0099.565 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0099.565 (0) Examining (for files) backup set with nonce=6d83ba9f37a6, datestamp=1736569002 (Jan 11 2025 04:16:42)
+0099.565 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0099.566 (0) Examining (for files) backup set with nonce=6d83ba9f37a6, datestamp=1736568960 (Jan 11 2025 04:16:00)
+0099.566 (0) plugins: over retain limit (5); will delete this file entity
+0104.584 (0) Google Drive: backup_2025-01-11-0416_ActiveHub_Leeds_6d83ba9f37a6-plugins.zip: Deletion successful
+0104.591 (0) This backup set is now empty; will remove from history
+0104.593 (0) Deleting log file (log.6d83ba9f37a6.txt)
+0104.596 (0) Retain: saving new backup history (sets now: 5) and finishing retain operation
+0104.602 (0) Resume backup (f6ddfb85c2a2, 0): finish run
+0104.607 (0) Decremented the semaphore (fd) by 1
+0104.610 (0) Semaphore (fd) unlocked
+0104.611 (0) There were no errors in the uploads, so the 'resume' event (1) is being unscheduled
+0104.617 (0) Deleting zip manifest (backup_2025-01-13-0538_ActiveHub_Leeds_f6ddfb85c2a2-plugins.zip.list.tmp)
+0104.620 (0) Deleting zip manifest (backup_2025-01-13-0538_ActiveHub_Leeds_f6ddfb85c2a2-themes.zip.list.tmp)
+0104.623 (0) Deleting zip manifest (backup_2025-01-13-0538_ActiveHub_Leeds_f6ddfb85c2a2-uploads.zip.list.tmp)
+0104.627 (0) Deleting zip manifest (backup_2025-01-13-0538_ActiveHub_Leeds_f6ddfb85c2a2-others.zip.list.tmp)
+0104.629 (0) Fetching RSS news feed
+0105.035 (0) Fetched RSS news feed; result is a: SimplePie\SimplePie
+0105.084 (0) Sending email ('Files and database (Full backup)') report (attachments: 0, size: 0 KB) to: axful...
+0105.096 (0) An error occurred when sending a backup report email and/or backup file(s) via email (wp_mail_failed): Invalid address:  (From): wordpress@localhost
+0105.098 (0) The backup succeeded and is now complete
