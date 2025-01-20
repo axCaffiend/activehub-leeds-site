@@ -42,12 +42,14 @@
 							<?php 
 							// Retrieve ACF field input
 							$tags = get_field('event_tags');
+
 							// Get term object for Ability level to use term_id for displaying its child terms.
 							$ability_level = get_term_by('slug', 'ability-level', 'event_tags');
+							// Get term object for Facilities (used further down underneath Google Map)
+							$facilities = get_term_by('slug', 'venue-facilities', 'event_tags');
 							
 							if( $tags ):
 								?>
-								<!-- Dynamic -->
 								<div class="card-tags container-fluid mb-2 text-center">
 
 									<!-- Ability level tags -->
@@ -73,18 +75,77 @@
 							<?php endif ?>
 							
 							
+							<!-- Date and Time -->
+							 <!-- 
+								Convert to datetime objects to split display day/date and time separately
+							 -->
+							<?php 
+								date_default_timezone_set(('Europe/London'));
+								$date_today = date('D d/m/Y');
+								// Expected input format from ACF field (in ACF field settings)
+								$date_input_format = 'd/m/Y g:i a';
+
+								// Get start date time and format
+								$date_time_start = DateTimeImmutable::createFromFormat($date_input_format, get_field('date_time')['start']);
+								$date_start = $date_time_start->format('D d/m/Y');
+								$time_start = $date_time_start->format('g:i A');
+								// Get end date time and format
+								$date_time_end = DateTimeImmutable::createFromFormat($date_input_format, get_field('date_time')['end']);
+								$date_end = $date_time_end->format('D d/m/Y');
+								$time_end = $date_time_end->format('g:i A');
+							?>
+
+							<!-- Date -->
 							<p class="col-auto card-key-info">
 								<span class="material-symbols-rounded">event</span>
-								<?php 
-								$date_time_start = get_field('date_time')['start'];
-								$date_time_end = get_field('date_time')['end'];
-								
+								<?php if($date_start == $date_today) {
+									echo esc_html('TODAY');
+								} elseif($date_start == $date_end) {
+									echo esc_html($date_start);
+								} else {
+									echo esc_html(sprintf("{$date_start} - {$date_end}"));
+								}
 								?>
 							</p>
-							<p class="col-auto card-key-info"><span class="material-symbols-rounded">schedule</span>6:30AM - 7:15AM</p>
-							<p class="col-12 card-key-info"><span class="material-symbols-rounded">distance</span>2.7 miles</p>
-							<p class="col-12">Springhead Park Oulton Lane Rothwell</p>
-							<p class="col-12 card-key-info"><span class="material-symbols-rounded">currency_pound</span>8.00</p>
+
+							<!-- Time -->
+							<p class="col-auto card-key-info">
+								<span class="material-symbols-rounded">schedule</span>
+								<?php echo esc_html(sprintf("{$time_start} - {$time_end}"))?>
+							</p>
+
+							<!-- Distance -->
+							<p class="col-12 card-key-info">
+								<span class="material-symbols-rounded">distance</span>
+								2.7 miles
+							</p>
+							
+							<!-- Address -->
+							<?php
+							// Code from acf docs page on google maps field
+								$location = get_field('location');
+								if ($location) {
+									    // Loop over segments and construct HTML.
+										$address = '';
+										foreach( array('name', 'street_name_short', 'city', 'post_code') as $i => $k ) {
+											if( isset( $location[ $k ] ) ) {
+												$address .= sprintf( '<span class="segment-%s">%s</span>, ', $k, $location[ $k ] );
+											}
+										}
+										// Trim trailing comma.
+										$address = trim( $address, ', ' );
+									}
+							?>
+							<p class="col-12">
+
+								<?php 
+									echo ($address);
+								?>
+							</p>
+							<p class="col-12 card-key-info">
+								<span class="material-symbols-rounded">currency_pound</span>
+								<?php echo the_field('price') ?>
+							</p>
 							<a href="#" class="btn btn-lg btn-secondary">BOOK NOW<span class="material-symbols-rounded">arrow_right_alt</span></a>
 						</div>
 					</div>
@@ -109,23 +170,48 @@
 			<div class="col-12 col-md-7">
 				<!-- ----- EVENT DETAILS ----- -->
 				<section class="container-lg mb-3 mb-sm-4 mb-lg-5">
-					<h2>Event Details</h2>
-					<p>Fitness Success Boot Camp: Burns Fat, Tone Body And Get You Fit In The Great Outdoors</p>
-					<p>Sessions are modified according to your fitness level you will be training with an amazing group of people who will support and motivate you our instructors will give you the tools to achieve your fitness goals.</p>
-					<p>THINK OUTSIDE THE GYM</p>
-					<p>We are based in Rothwell Park Leeds LS26</p>
+					<h2>Details</h2>
+					<?php the_content();?>
 				</section>
 					<!-- ----- End Event Details ----- -->
 
 				<!-- ----- VENUE INFO ----- -->
 				<section class="container-lg mb-3 mb-sm-4 mb-lg-5">
 					<h2>Venue</h2>
-					<p>Rothwell Park Leeds LS26</p>
-					<div class="hero-slider mb-3">Google map embed placeholder</div>
+					<p>
+						<?php echo esc_html(sprintf("{$location['address']} {$location['post_code']}")) ?>
+					</p>
+					<div class="mb-3">
+						<?php 
+						if($location){
+							acf_make_map($location);
+						}
+						?>
+					</div>
 					<h3>Facilities</h3>
 					<div class="row">
-						<p class="col-auto"><span class="material-symbols-rounded">local_parking</span>Free Parking</p>
-						<p class="col-auto"><span class="material-symbols-rounded">wc</span>Public Toilets</p>
+						<?php if ($tags): ?>
+							<!-- Ability level tags -->
+							<?php foreach($tags as $tag ):?>
+								<?php if(
+									$tag->parent == $facilities->term_id
+									): 
+									?>
+									<p class="col-auto">
+										<?php
+											$material_icon = get_field('material_icon', $tag);
+											if ($material_icon):
+										?>
+											<span class="material-symbols-rounded">
+												<?php echo esc_html($material_icon) ?>
+											</span>
+										<?php endif ?>
+										<?php echo esc_html($tag->name) ?>
+									</p>
+								<?php endif ?>
+							<?php endforeach ?>
+									<!-- end Ability level tags -->
+						<?php endif ?>
 					</div>
 				</section>
 				<!-- ----- End Venue Info ----- -->
