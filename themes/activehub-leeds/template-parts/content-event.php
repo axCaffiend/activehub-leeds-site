@@ -22,8 +22,11 @@
 			the_post_thumbnail();
 		endif?>
 		
-		<!-- Event hero slider -->
-		<div class="hero-slider">Hero Slider placeholder</div>
+		<!-- Event cover image -->
+		 <?php $cover_image = get_field('cover_image'); ?>
+		<div class="hero-slider">
+			<img class="w-100 h-100" src="<?php echo esc_html($cover_image['url']); ?>" alt="<?php echo esc_html($cover_image['alt']); ?>">
+		</div>
 	</header><!-- .entry-header -->
 
 	<div class="entry-content container-lg">
